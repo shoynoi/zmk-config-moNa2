@@ -20,6 +20,7 @@
     excluded-positions = <
         7  // I
         18 // J
+        19 // K
         20 // L
         // 30 // M
         // 31 // <
