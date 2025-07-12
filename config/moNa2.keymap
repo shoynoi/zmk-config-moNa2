@@ -19,7 +19,14 @@
 &lt { quick-tap-ms = <250>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        test {
+            bindings = <&none>;
+            key-positions = <30 31 32>;
+        };
+    };
 
     macros {
         bt0: bt0 {
