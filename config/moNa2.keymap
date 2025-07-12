@@ -5,7 +5,7 @@
 #include <input/processors.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define MOUSE 6
+#define MOUSE 8
 
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 8 250>;
