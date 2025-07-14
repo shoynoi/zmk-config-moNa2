@@ -22,7 +22,7 @@
 
         test {
             bindings = <&none>;
-            key-positions = <18 20 7>;
+            key-positions = <18 20 7 10 11 12 13>;
         };
     };
 
