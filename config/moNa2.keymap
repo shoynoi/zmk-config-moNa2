@@ -153,7 +153,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -176,7 +176,7 @@
 &trans     &trans        &trans        &trans        &trans      &trans    &trans  &trans                                       &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         mac_layer_3 {
@@ -199,7 +199,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -222,7 +222,7 @@
 &trans     &trans        &trans        &trans        &trans      &trans    &trans  &trans                                       &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         linux_layer_3 {
