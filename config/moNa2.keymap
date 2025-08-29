@@ -227,7 +227,7 @@
 
         linux_layer_3 {
             bindings = <
-&kp C_VOLUME_UP        &kp F7           &kp F8             &kp F9        &kp F10                    &trans          &kp LC(PAGE_DOWN)     &kp F11       &kp LC(PAGE_UP)        &kp LC(N9)
+&kp C_VOLUME_UP        &kp F7           &kp F8             &kp F9        &kp F10                    &trans          &kp LC(PAGE_UP)       &kp F11       &kp LC(PAGE_DOWN)      &kp LC(N9)
 &mt LEFT_GUI C_VOL_DN  &mt LEFT_ALT F4  &mt LEFT_SHIFT F5  &mt LCTRL F6  &kp F11  &trans    &trans  &kp LEFT_ARROW  &kp DOWN              &kp UP_ARROW  &kp RIGHT              &trans
 &kp K_MUTE             &kp F1           &kp F2             &kp F3        &kp F12  &trans    &trans  &trans          &kp LG(LEFT_BRACKET)  &trans        &kp LG(RIGHT_BRACKET)  &trans
 &trans                 &trans           &trans             &trans        &trans   &trans    &trans  &trans                                                                     &trans
