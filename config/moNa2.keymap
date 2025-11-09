@@ -159,9 +159,9 @@
         mac_default_layer {
             bindings = <
 &kp Q                           &kp W                           &kp E                             &kp R                           &kp T                                           &kp Y        &kp U        &kp I             &kp O           &kp P
-&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans            &kp LCTRL        &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
-&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LEFT_SHIFT    &kp TAB          &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
-&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LC(LG(LEFT_SHIFT))) TAB  &lt 1 SPACE  &lang             &lt 3 BACKSPACE  &lt 2 ENTER                                                 &kp ESC
+&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans       &kp LS(LG(NUMBER_4))  &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
+&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LCTRL    &kp TAB               &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
+&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LC(LG(LEFT_SHIFT))) TAB  &lt 1 SPACE  &lang        &lt 3 BACKSPACE       &lt 2 ENTER                                                 &kp ESC
             >;
 
             sensor-bindings =
@@ -204,10 +204,10 @@
 
         linux_default_layer {
             bindings = <
-&kp Q                           &kp W                           &kp E                             &kp R                           &kp T                                           &kp Y        &kp U        &kp I             &kp O           &kp P
-&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans            &kp LCTRL        &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
-&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LEFT_SHIFT    &kp TAB          &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
-&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LG(LC(LEFT_SHIFT))) TAB  &lt 5 SPACE  &lang             &lt 7 BACKSPACE  &lt 6 ENTER                                                 &kp ESC
+&kp Q                           &kp W                           &kp E                             &kp R                           &kp T                                      &kp Y        &kp U        &kp I             &kp O           &kp P
+&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans       &kp PRINTSCREEN  &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
+&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LCTRL    &kp TAB          &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
+&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LG(LC(LEFT_SHIFT))) TAB  &lt 5 SPACE  &lang        &lt 7 BACKSPACE  &lt 6 ENTER                                                 &kp ESC
             >;
 
             sensor-bindings =
