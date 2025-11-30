@@ -160,7 +160,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <99999>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             retro-tap;
             hold-trigger-on-release;
         };
