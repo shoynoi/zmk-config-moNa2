@@ -158,10 +158,10 @@
 
         mac_default_layer {
             bindings = <
-&kp Q                           &kp W                           &kp E                             &kp R                           &kp T                                           &kp Y        &kp U        &kp I             &kp O           &kp P
-&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans       &kp LS(LG(NUMBER_4))  &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
-&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LCTRL    &kp TAB               &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
-&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LC(LG(LEFT_SHIFT))) TAB  &lt 1 SPACE  &lang        &lt 3 BACKSPACE       &lt 2 ENTER                                                 &kp ESC
+&kp Q           &kp W           &kp E             &kp R                 &kp T                                                            &kp Y                         &kp U        &kp I             &kp O           &kp P
+&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F           &mt G LA(LC(LG(LEFT_SHIFT)))  &trans       &kp LS(LG(NUMBER_4))  &mt H LA(LC(LG(LEFT_SHIFT)))  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI ENTER
+&kp Z           &kp X           &kp C             &kp V                 &kp B                         &kp LCTRL    &kp TAB               &kp N                         &kp M        &lt 9 COMMA       &kp DOT         &lt 8 SLASH
+&kp CAPS        &mo 9           &kp LG(SPACE)     &mt LANG2 LEFT_SHIFT  &lt 1 SPACE                   &kp LANG1    &lt 3 BACKSPACE       &lt 2 TAB                                                                    &kp ESC
             >;
 
             sensor-bindings =
@@ -193,10 +193,10 @@
 
         mac_layer_3 {
             bindings = <
-&kp C_VOLUME_UP        &kp F7           &kp F8             &kp F9        &kp F10                    &trans          &kp LS(LG(LEFT_BRACKET))  &kp F11       &kp LG(LS(RIGHT_BRACKET))  &kp LC(N9)
-&mt LEFT_GUI C_VOL_DN  &mt LEFT_ALT F4  &mt LEFT_SHIFT F5  &mt LCTRL F6  &kp F11  &trans    &trans  &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW  &kp RIGHT                  &trans
-&kp K_MUTE             &kp F1           &kp F2             &kp F3        &kp F12  &trans    &trans  &trans          &kp LG(LEFT_BRACKET)      &trans        &kp LG(RIGHT_BRACKET)      &trans
-&trans                 &trans           &trans             &trans        &trans   &trans    &trans  &trans                                                                             &trans
+&kp F12           &kp F7           &kp F8             &kp F9        &kp C_VOLUME_UP                      &trans          &kp LS(LG(LEFT_BRACKET))  &kp F11       &kp LG(LS(RIGHT_BRACKET))  &kp LC(N9)
+&mt LEFT_GUI F11  &mt LEFT_ALT F4  &mt LEFT_SHIFT F5  &mt LCTRL F6  &kp C_VOLUME_DOWN  &trans    &trans  &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW  &kp RIGHT                  &trans
+&kp F10           &kp F1           &kp F2             &kp F3        &kp K_MUTE         &trans    &trans  &trans          &kp LG(LEFT_BRACKET)      &trans        &kp LG(RIGHT_BRACKET)      &trans
+&trans            &trans           &trans             &trans        &trans             &trans    &trans  &trans                                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -204,10 +204,10 @@
 
         linux_default_layer {
             bindings = <
-&kp Q                           &kp W                           &kp E                             &kp R                           &kp T                                      &kp Y        &kp U        &kp I             &kp O           &kp P
-&mt_exit_AML_on_tap LEFT_GUI A  &mt_exit_AML_on_tap LEFT_ALT S  &mt_exit_AML_on_tap LEFT_SHIFT D  &mt_exit_AML_on_tap LCTRL F     &kp G        &trans       &kp PRINTSCREEN  &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI MINUS
-&kp Z                           &kp X                           &kp C                             &kp V                           &kp B        &kp LCTRL    &kp TAB          &kp N        &kp M        &kp COMMA         &kp DOT         &kp SLASH
-&kp CAPS                        &mo 9                           &kp LEFT_SHIFT                    &mt LA(LG(LC(LEFT_SHIFT))) TAB  &lt 5 SPACE  &lang        &lt 7 BACKSPACE  &lt 6 ENTER                                                 &kp ESC
+&kp Q           &kp W           &kp E             &kp R                 &kp T                                                       &kp Y                         &kp U        &kp I             &kp O           &kp P
+&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F           &mt G LA(LC(LG(LEFT_SHIFT)))  &trans       &kp PRINTSCREEN  &mt H LA(LC(LG(LEFT_SHIFT)))  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI ENTER
+&kp Z           &kp X           &kp C             &kp V                 &kp B                         &kp LCTRL    &kp TAB          &kp N                         &kp M        &lt 9 COMMA       &kp DOT         &lt 8 SLASH
+&kp CAPS        &mo 9           &kp LG(SPACE)     &mt LEFT_SHIFT LANG2  &lt 5 SPACE                   &kp LANG1    &lt 7 BACKSPACE  &lt 6 TAB                                                                    &kp ESC
             >;
 
             sensor-bindings =
@@ -239,10 +239,10 @@
 
         linux_layer_3 {
             bindings = <
-&kp C_VOLUME_UP        &kp F7           &kp F8             &kp F9        &kp F10                    &trans          &kp LC(PAGE_UP)       &kp F11       &kp LC(PAGE_DOWN)      &kp LC(N9)
-&mt LEFT_GUI C_VOL_DN  &mt LEFT_ALT F4  &mt LEFT_SHIFT F5  &mt LCTRL F6  &kp F11  &trans    &trans  &kp LEFT_ARROW  &kp DOWN              &kp UP_ARROW  &kp RIGHT              &trans
-&kp K_MUTE             &kp F1           &kp F2             &kp F3        &kp F12  &trans    &trans  &trans          &kp LG(LEFT_BRACKET)  &trans        &kp LG(RIGHT_BRACKET)  &trans
-&trans                 &trans           &trans             &trans        &trans   &trans    &trans  &trans                                                                     &trans
+&kp F12           &kp F7           &kp F8             &kp F9        &kp C_VOLUME_UP                      &trans          &kp LC(PAGE_UP)       &kp F11       &kp LC(PAGE_DOWN)      &kp LC(N9)
+&mt LEFT_GUI F11  &mt LEFT_ALT F4  &mt LEFT_SHIFT F5  &mt LCTRL F6  &kp C_VOLUME_DOWN  &trans    &trans  &kp LEFT_ARROW  &kp DOWN              &kp UP_ARROW  &kp RIGHT              &trans
+&kp F10           &kp F1           &kp F2             &kp F3        &kp K_MUTE         &trans    &trans  &trans          &kp LG(LEFT_BRACKET)  &trans        &kp LG(RIGHT_BRACKET)  &trans
+&trans            &trans           &trans             &trans        &trans             &trans    &trans  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -250,8 +250,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mo 9     &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
@@ -261,13 +261,22 @@
 
         SCROLL {
             bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        system {
+            bindings = <
 &bt BT_CLR_ALL  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans
 &trans          &bt3    &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
 &trans          &bt0    &bt1    &bt2    &trans  &trans    &bootloader  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans    &trans       &trans                          &trans
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
