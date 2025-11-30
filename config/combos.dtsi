@@ -1,0 +1,80 @@
+/*
+ * Combo definitions for moNa2
+ * Based on urob/zmk-config v0.3
+ *
+ * Note: Key positions are adapted for moNa2's QWERTY layout
+ * You may need to adjust these based on your preferences
+ */
+
+/*                KEY POSITIONS (moNa2 - 34 keys)
+
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────╮ LH1 LH0     │ │     RH0 RH1 ╭───────╯
+          ╰─────────────╯ ╰─────────────╯
+
+  Physical layout (QWERTY):
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │  Q   W   E   R   T  │ │  Y   U   I   O   P  │
+  │  A   S   D   F   G  │ │  H   J   K   L   -  │
+  │  Z   X   C   V   B  │ │  N   M   ,   .   /  │
+  ╰───────╮ SPC TAB     │ │ BSPC ENT ╭──────────╯
+          ╰─────────────╯ ╰──────────╯         */
+
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+/* Horizontal combos - left hand */
+ZMK_COMBO(esc,   &kp ESC,      1 2,         DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // W+E
+ZMK_COMBO(mouse, &smart_mouse, 2 3,         DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // E+R
+
+ZMK_COMBO(tab,   &hml LS(LALT)TAB, 11 12,   DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // S+D
+ZMK_COMBO(ldr,   &leader,      12 13,       DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LCTRL),    KEYS_R)  // D+F
+ZMK_COMBO(ldrsh, &leader_sft,  11 12 13,    DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LC(LALT)), KEYS_R)  // S+D+F
+
+ZMK_COMBO(cut,   &kp LC(X),    23 25,       DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // X+V
+ZMK_COMBO(copy,  &kp LC(INS),  23 24,       DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // X+C
+ZMK_COMBO(paste, &kp LS(INS),  24 25,       DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // C+V
+
+/* Horizontal combos - right hand */
+ZMK_COMBO(bspc,  &kp BSPC,     6 7,         DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // U+I
+ZMK_COMBO(del,   &kp DEL,      7 8,         DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // I+O
+
+ZMK_COMBO(lpar,  &lpar_lt,     18 19,       DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LCTRL),    KEYS_L)  // J+K
+ZMK_COMBO(rpar,  &rpar_gt,     19 20,       DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LALT),     KEYS_L)  // K+L
+ZMK_COMBO(lt,    &kp LT,       18 19,           NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)  // J+K (NAV layer)
+ZMK_COMBO(gt,    &kp GT,       19 20,           NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)  // K+L (NAV layer)
+
+ZMK_COMBO(lbkt,  &kp LBKT,     30 31,       DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // M+,
+ZMK_COMBO(rbkt,  &kp RBKT,     31 32,       DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)  // ,+.
+ZMK_COMBO(lbrc,  &kp LBRC,     30 31,           NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)  // M+, (NAV layer)
+ZMK_COMBO(rbrc,  &kp RBRC,     31 32,           NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)  // ,+. (NAV layer)
+
+/* Vertical combos - left hand */
+ZMK_COMBO(at,    &kp AT,       1 11,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // W+S
+ZMK_COMBO(hash,  &kp HASH,     2 12,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // E+D
+ZMK_COMBO(dllr,  &kp DLLR,     3 13,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // R+F
+ZMK_COMBO(prcnt, &kp PRCNT,    4 14,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // T+G
+
+ZMK_COMBO(grave, &kp GRAVE,    11 23,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // S+X
+ZMK_COMBO(bslh,  &kp BSLH,     12 24,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // D+C
+ZMK_COMBO(equal, &kp EQUAL,    13 25,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // F+V
+ZMK_COMBO(tilde, &kp TILDE,    14 26,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // G+B
+
+/* Vertical combos - right hand */
+ZMK_COMBO(caret, &kp CARET,    5 17,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Y+H
+ZMK_COMBO(plus,  &kp PLUS,     6 18,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // U+J
+ZMK_COMBO(star,  &kp STAR,     7 19,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // I+K
+ZMK_COMBO(amps,  &kp AMPS,     8 20,        DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // O+L
+
+ZMK_COMBO(under, &kp UNDER,    17 29,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // H+N
+ZMK_COMBO(minus, &kp MINUS,    18 30,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // J+M
+ZMK_COMBO(fslh,  &kp FSLH,     19 31,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // K+,
+ZMK_COMBO(pipe,  &kp PIPE,     20 32,       DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // L+.
+
+/* vim: set ft=c tw=80: */

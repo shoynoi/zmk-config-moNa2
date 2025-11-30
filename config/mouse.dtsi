@@ -1,0 +1,76 @@
+/*
+ * Mouse emulation and pointing device settings for moNa2
+ * Based on urob/zmk-config v0.3
+ * Integrated with moNa2's PMW3610 pointing device
+ */
+
+#include <dt-bindings/zmk/pointing.h>
+
+/* Pointing device defaults (can be adjusted for your preference) */
+#ifndef ZMK_POINTING_DEFAULT_MOVE_VAL
+  #define ZMK_POINTING_DEFAULT_MOVE_VAL 600
+#endif
+
+#ifndef ZMK_POINTING_DEFAULT_SCRL_VAL
+  #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#endif
+
+/* Mouse movement acceleration settings */
+&mmv {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <500>;
+  delay-ms = <0>;
+};
+
+/* Mouse scroll acceleration settings */
+&msc {
+  acceleration-exponent = <0>;
+  time-to-max-speed-ms = <300>;
+  delay-ms = <0>;
+};
+
+/* Layer-specific input processing for mouse movement */
+&mmv_input_listener {
+  warp {
+    layers = <NAV>;
+    input-processors = <&zip_xy_scaler 3 1>;
+  };
+  precision {
+    layers = <FN>;
+    input-processors = <&zip_xy_scaler 1 2>;
+  };
+};
+
+/* Scroll scaler for layer-specific scrolling */
+/ {
+  zip_scroll_scaler: zip_scroll_scaler {
+    compatible = "zmk,input-processor-scaler";
+    #input-processor-cells = <2>;
+    type = <INPUT_EV_REL>;
+    codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+    track-remainders;
+  };
+};
+
+&msc_input_listener {
+  warp {
+    layers = <NAV>;
+    input-processors = <&zip_scroll_scaler 2 1>;
+  };
+  precision {
+    layers = <FN>;
+    input-processors = <&zip_scroll_scaler 1 2>;
+  };
+};
+
+/* Mouse key aliases for easier keymap definition */
+#define U_MS_U &mmv MOVE_UP
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define U_WH_U &msc SCRL_UP
+#define U_WH_D &msc SCRL_DOWN
+#define U_WH_L &msc SCRL_LEFT
+#define U_WH_R &msc SCRL_RIGHT
+
+/* vim: set ft=c tw=80: */

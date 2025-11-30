@@ -4,8 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: shoynoi
       url-base: https://github.com/shoynoi
-    - name: caksoylar  # <-- new entry
+    - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +16,23 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: shoynoi
       revision: scroll-acceleration-feature
-    - name: zmk-rgbled-widget  # <-- new entry
+    - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: v0.3
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3
+    - name: zmk-tri-state
+      remote: urob
+      revision: v0.3
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: v0.3
   self:
     path: config
