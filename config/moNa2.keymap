@@ -249,7 +249,7 @@
 &trans            &trans           &trans             &trans        &trans             &trans    &trans  &trans                                                                             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         linux_default_layer {
@@ -293,7 +293,7 @@
 &trans            &trans           &trans             &trans        &trans             &trans    &trans  &trans                                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         MOUSE {
