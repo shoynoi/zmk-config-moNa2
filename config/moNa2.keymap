@@ -221,10 +221,10 @@
 
         mac_layer_1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL    &none         &kp TILDE                               &none          &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
-&kp AT_SIGN       &kp HASH           &kp DOLLAR   &kp ASTERISK  &kp GRAVE  &trans    &trans             &kp CARET      &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
-&kp BACKSLASH     &kp EXCLAMATION    &kp PERCENT  &kp PIPE      &none      &trans    &trans             &kp AMPERSAND  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON
-&trans            &trans             &trans       &trans        &trans     &trans    &kp LA(BACKSPACE)  &trans                                                                      &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL    &none         &kp TILDE                        &none          &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
+&kp AT_SIGN       &kp HASH           &kp DOLLAR   &kp ASTERISK  &kp GRAVE  &trans    &trans      &kp CARET      &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
+&kp BACKSLASH     &kp EXCLAMATION    &kp PERCENT  &kp PIPE      &none      &trans    &trans      &kp AMPERSAND  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON
+&trans            &trans             &trans       &trans        &trans     &trans    &kp DELETE  &trans                                                                      &trans
             >;
 
             sensor-bindings = <&scroll_down_up>;
@@ -265,10 +265,10 @@
 
         linux_layer_1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL    &none         &kp TILDE                               &none          &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
-&kp AT_SIGN       &kp HASH           &kp DOLLAR   &kp ASTERISK  &kp GRAVE  &trans    &trans             &kp CARET      &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
-&kp BACKSLASH     &kp EXCLAMATION    &kp PERCENT  &kp PIPE      &none      &trans    &trans             &kp AMPERSAND  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON
-&trans            &trans             &trans       &trans        &trans     &trans    &kp LC(BACKSPACE)  &trans                                                                      &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL    &none         &kp TILDE                        &none          &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
+&kp AT_SIGN       &kp HASH           &kp DOLLAR   &kp ASTERISK  &kp GRAVE  &trans    &trans      &kp CARET      &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
+&kp BACKSLASH     &kp EXCLAMATION    &kp PERCENT  &kp PIPE      &none      &trans    &trans      &kp AMPERSAND  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON
+&trans            &trans             &trans       &trans        &trans     &trans    &kp DELETE  &trans                                                                      &trans
             >;
 
             sensor-bindings = <&scroll_down_up>;
